@@ -4,15 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/index.js"></script>
     <title>WorthIT?</title>
 
 </head>
-<body>
+<body onload = onload()>
 
+
+    <div id="buttons">
     <h1>Seleccione motivo</h1>
 
-    <button type="" id="sameJob">Calcular mi salario</button><br>
-    <button type="" id="jobComparison">Cambio Laboral</button>
+        <button type="" id="sameJob" onclick=sameJob()>Calcular mi salario</button><br>
+        <button type="" id="jobComparison">Cambio Laboral</button>
+    </div>
+
+    <div id ="initialDiv">
+        <h1>Initial Form</h1>
+        <div id="initQuestions">
+                <label for="presentiality">Para usted influye negativamente o positivamente la presencialidad:</label>
+                <input type="radio" name="presentiality" id="" value="1">+
+                <input type="radio" name="presentiality" id="" value="0">-<br>
+                <div id="presencialityOn">
+                    <label for="officeDays">Cuantos dias encuentra aceptable la concurrencia a la oficina?:</label>
+                    <input type="range" name="" id="officeDays" min="1" max="5" value="1"> <br>
+                    <label for="transport">Cuenta con transporte propio?:</label>
+                    <input type="checkbox" name="" id="transport"><br>
+                </div>
+                <label for="peopleForm">Es importante para usted la calidez y acompanamiento que ofrece su equipo laboral?:</label>
+                <input type="checkbox" name="" id="peopleForm"><br>
+    
+                <button type="" id="finishInitForm" onclick=initForm()>Begin</button>
+        </div>
+    </div>
+
+    <div id="formulary">
+            <label for="salary">Salario Neto</label>
+            <input type="number" name="" id="salary"> <br>
+            <label for="bonification">Tiene Bonificaciones?</label>
+            <input type="checkbox" name="" id="bonifications"><br>
+            <div id="bonificationsDiv">
+                <label for="quantityByYear">Cantidad de bonificaciones anuales:</label>
+                <input type="number" name="" id="quantityByYear"><br>
+                <label for="salaryRepresentation">Representacion porcentual del sueldo</label>
+                <input type="range" name="" id="salaryRepresentation" min="0" max="1" step="0.1" value="0"> <br>
+            </div>
+    
+            <label for="lenguages">Ofrecen cursos de lenguas?:</label>
+            <input type="checkbox" name="" id="lenguages">
+            <div id="lenguagesOn">
+                <input type="checkbox" name="" id="english"> Ingles<br>
+                <input type="checkbox" name="" id="portuguese">Portugues<br>
+                <input type="checkbox" name="" id="espanol">Espanol<br>
+                <input type="checkbox" name="" id="other">Otro
+            </div>
+    
+            <label for="certifications">Certificaciones</label>
+            <input type="checkbox" name="" id="certifications">
+            <div id="certificationsOn">
+                <label for="certQuantity">Cantidad de certficaciones Anuales</label>
+                <input type="number" name="" id="certQuantity">
+            </div>
+    
+            <label for=""></label>
+            <div>
+    
+            </div>
+    
+            <h2>Preguntas referentes a comodidades</h2>
+            <div id="presencialityOn">
+                <label for="distance">Considera que su oficina se encuentra alejado a su hogar?</label>
+                <input type="checkbox" name="" id="doistance">
+                <label for="foodQuestion">La comida corre de parte de la empresa?</label>
+                <input type="checkbox" name="" id="foodQuestion">
+                <div>
+                    <label for="foodTime">Cuales ofrece?</label><br>
+                    <input type="checkbox" name="foodTime" id="" value="Desayuno"> Desayuno/Merienda <br>
+                    <input type="checkbox" name="foodTime" id="" value="Almuerzo">Almuerzo <br>
+                    <input type="checkbox" name="foodTime" id="" value="AfterOffice"> After Office
+                </div>
+            </div>
+    
+            <label for="gift">La empresa suele realizar regalos?</label>
+            <input type="checkbox" name="gift" id="giftCheck">
+    
+            <div id="giftOn">
+                <input type="checkbox" name="gift" id="birthdaygift"> Cumpleanos<br>
+                <input type="checkbox" name="gift" id="festiveDays"> Dias Festivos<br>
+                <input type="checkbox" name="gift" id="othergift"> Otros Regalos<br>
+            </div>
+            
+            <button type="submit">Calculate</button>
+    </div>
+
+
 
     
 </body>
