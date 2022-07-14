@@ -1,3 +1,143 @@
-h1{
-    color: red;
+/*Font
+
+font-family: 'Inter', sans-serif; 
+
+
+Posib paleta de colores 
+/* Color Theme Swatches in Hex 
+ color: #2E14D9; 
+color: #5941F2; 
+ color: #B1A7F2; 
+color: #BF9663; 
+ color: #F2F2F2; 
+
+
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.navbar {
+    background-color: #949cff !important;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-end; }
+  
+  nav ul {
+    padding: 2px;
+    color: #ffffff !important;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Inter', sans-serif; }
+  
+  nav li {
+    padding: 2px;
+    color: #ffffff !important;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Inter', sans-serif; }
+  
+  nav a {
+    padding: 2px;
+    color: #ffffff !important;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Inter', sans-serif; }
+  
+  .navbar-brand {
+    background-color: #949cff !important;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px !important; }
+
+body{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.4;
+    background-color: #949cff; /*puede ser gradient*/
+    color: white;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2.5rem;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+h1{
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+
+}
+
+p{
+    margin-top: .5rem;
+}
+
+.index-button{
+    margin-right: auto;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.index-button:hover{
+    background-color: #a2a4f6;
+}
+
+.img-wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img{
+    width: 100%;
+    height: 100%;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:767px){
+    .img-wrapper{
+        width: 100%;
+    }
+    .img-wrapper{
+        margin-top: 2rem;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    a {
+      color: #ffffff;
+      transition: color .5s !important; }
+      a:hover {
+        color: #a2a4f6 !important; }
+
+      }
